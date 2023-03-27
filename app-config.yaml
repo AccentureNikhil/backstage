@@ -27,7 +27,7 @@ backend:
   # auth:
   #   keys:
   #     - secret: ${BACKEND_SECRET}
-  baseUrl: http://localhost:7007
+  baseUrl: https://accenturenikhil-upgraded-space-guacamole-g9p9wx4g4vgc9rrw-7007.preview.app.github.dev
   listen:
     port: 7007
   database:
@@ -36,7 +36,7 @@ backend:
   cache:
     store: memory
   cors:
-    origin: http://localhost:3000
+    origin: [http://localhost:3000 , http://127.0.0.1:3000 , https://accenturenikhil-upgraded-space-guacamole-g9p9wx4g4vgc9rrw-3000.preview.app.github.dev]
     methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
     credentials: true
   csp:
